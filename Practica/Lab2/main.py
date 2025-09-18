@@ -1,8 +1,5 @@
 import numpy as np
 
-from Practica.EasyNn.main import weights
-
-
 def neuralNetwork4(inps, weights):
     prediction_h = inps.dot(weights[0])
     prediction_out = prediction_h.dot(weights[1])

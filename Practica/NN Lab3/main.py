@@ -1,8 +1,5 @@
 import numpy as np
 
-from Practica.EasyNn.main import weights
-
-
 #оценка ошибки
 def neuralNetwork(inps, weights):
     return inps.dot(weights)

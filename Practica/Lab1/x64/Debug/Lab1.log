@@ -1,0 +1,6 @@
+﻿  Lab1.cpp
+D:\Work\Polytech\Programming\Algoritm\Practica\Lab1\Lab1.cpp(10,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Work\Polytech\Programming\Algoritm\Practica\Lab1\Lab1.cpp(24,13): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Work\Polytech\Programming\Algoritm\Practica\Lab1\Lab1.cpp(12,9): warning C4101: 'a': unreferenced local variable
+D:\Work\Polytech\Programming\Algoritm\Practica\Lab1\Lab1.cpp(13,15): warning C4101: 'bigNumber': unreferenced local variable
+  Lab1.vcxproj -> D:\Work\Polytech\Programming\Algoritm\Practica\Lab1\x64\Debug\Lab1.exe

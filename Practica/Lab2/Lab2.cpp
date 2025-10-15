@@ -2,17 +2,80 @@
 //
 
 #include <iostream>
-using namespace std;
+#include "MyMath.h"
 
-void func(int& x, int& y);
-void print(string name);
-void print(float f);
-int sum(int x, int y, int z);
+using namespace std;
+using namespace MySpace;
+
+#define PI 3.14f;
+#define CIRCLE_AREA(r) (r) * (r) * PI;
+#define RECTANGLE_AREA(a,b) a = a*b;
+
+//void func(int& x, int& y);
+//void print(string name);
+//void print(float f);
+//int sum(int x, int y, int z);
+void test() {
+    static int x = 0;
+    x++;
+    cout << x << endl;
+}
+
+int y = 10;
+
+bool TMin(int a, int b) {
+    return a < b;
+}
+
+bool TMax(int a, int b) {
+    return a > b;
+}
+
+double MySpace::x = 25;
 
 int main()
 {
 
-    int x = 10;
+    //подключение внешних файлов
+    cout << mult(4, 5) << endl;
+    cout << MySpace::div(20, 4) << endl;
+
+    cout << x << endl;
+    x = 15;
+    MySpace::test();
+    cin.get();
+
+    // макросы
+//    cout << PI;
+//    cout << endl;
+//    int r = 4;
+//    int a = 3;
+//    int b = 6;
+//    cout << CIRCLE_AREA(a + b);
+//    cout << endl;
+//    RECTANGLE_AREA(a, b);//до процесса компил€ции макрос заменитс€ на следующее выражение a =a*b
+//    cout << a;
+//
+//    string str = "Hello";
+//    #define PRT(s) cout << s;
+//    PRT(str);
+//
+//#define CALL(f,a,b) T##f##(a,b);
+//    //cout << CALL(Min, a, b); // получаем ошибку. причина не найдена
+//    PRT(CALL(Max,a,b);
+    
+
+    //test();
+    //test();
+    //test();
+
+    //int x = 9;
+    //if (true) {
+    //    x = 10;
+    //}
+    //cout << x << endl;
+
+   /* int x = 10;
     int& y = x;
     y = 15;
     cout << x << endl;
@@ -22,7 +85,7 @@ int main()
     cout << a << " " << b << endl;
     print("name");
     int s = sum(3, 4, 5);
-    cout << s << endl;
+    cout << s << endl;*/
 
     /*int array[] = { 1,2,3,4,5 };
     int length = sizeof(array) / sizeof(array[0]);*/
@@ -119,23 +182,23 @@ int main()
 
 }
 
-void func(int& x, int& y) {
-    x += 1;
-    y = y * 7;
-}
-
-void print(string name)
-{
-    cout << name << endl;
-}
-
-void print(float f)
-{
-    print("number");
-}
-
-int sum(int x, int y, int z)
-{
-    int sum = x + y + z;
-    return sum;
-}
+//void func(int& x, int& y) {
+//    x += 1;
+//    y = y * 7;
+//}
+//
+//void print(string name)
+//{
+//    cout << name << endl;
+//}
+//
+//void print(float f)
+//{
+//    print("number");
+//}
+//
+//int sum(int x, int y, int z)
+//{
+//    int sum = x + y + z;
+//    return sum;
+//}

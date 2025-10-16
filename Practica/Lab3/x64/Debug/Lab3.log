@@ -1,2 +1,4 @@
 ﻿  Lab3.cpp
+D:\Work\Polytech\Programming\Algoritm\Practica\Lab3\Lab3.cpp(7,17): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Work\Polytech\Programming\Algoritm\Practica\Lab3\Lab3.cpp(8,18): warning C4305: 'initializing': truncation from 'double' to 'float'
   Lab3.vcxproj -> D:\Work\Polytech\Programming\Algoritm\Practica\Lab3\x64\Debug\Lab3.exe

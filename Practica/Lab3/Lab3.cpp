@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-//using namespace std;
+using namespace std;
 
 const float G = 9.8;
 const float PI = 3.14;
